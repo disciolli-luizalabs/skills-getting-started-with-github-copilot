@@ -142,3 +142,48 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-list {
+  margin-top: 10px;
+  padding-left: 20px; /* Indent the list */
+  list-style-type: none; /* Hide bullet points */
+  background-color: #f9f9f9; /* Light background to match activity cards */
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.participants-list li {
+  margin-bottom: 5px;
+  color: #333; /* Dark text for readability */
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.participants-list li:last-child {
+  margin-bottom: 0; /* Remove extra margin on the last item */
+}
+
+/* Optional: Style the "No participants yet" message */
+.participants-list li:only-child {
+  font-style: italic;
+  color: #666;
+  justify-content: flex-start; /* Align left if no button */
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #c62828; /* Red color for delete */
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #ffebee; /* Light red background on hover */
+}
